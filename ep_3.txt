@@ -1,0 +1,310 @@
+:start
+//=========================================
+//：1月ランキングイベント エピローグ_3
+//===================================
+
+//進行アイコン
+wicon script/tal_sto_next
+wiconpos 600 900
+
+//フレーム
+bup15 script/event_frame02
+buppos15 320 480
+
+//背景
+back script/bg/tal_sto_bg0_192
+backpos 320 480
+
+//BGM
+#bgm 3
+
+//セリフ位置調整
+namepos 45 625
+fontpos 45 685
+
+//チヅルちびキャラ
+bup3 script/player/534
+buppos3 410 450
+bupLR3 1
+
+//トトちびキャラ
+bup4 script/player/001
+buppos4 260 450
+bupLR4 0
+
+//フェイド
+fadechg 16
+timewait 16
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name チヅル 255
+
+mes
+そうか、メイ殿は旅立たれて
+しまわれたか…
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name トト 255
+
+mes
+…うん。巫女の服を置いて、
+もう出発したあとだったみゃ。
+
+mes
+どんな子だったのか、
+一目会ってみたかったけど…
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name チヅル 255
+
+mes
+そういえば、お主…
+どことなくメイ殿に面影が
+似ているような…
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name トト 255
+
+mes
+え？
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name チヅル 255
+
+mes
+…いや、すべてはまさに神のみぞ
+知りしこと。
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//チヅルバストアップ
+bup13 script/player/k534
+bup13fadechg 32
+buppos13 500 480
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name チヅル 255
+
+mes
+冒険者、お主たちには
+大層世話になった。
+
+mes
+もし、またメイ殿と会うことがあれば、
+どうかよろしく伝えておいてくれ。
+
+//エフェクト消し
+bup13fadeout 32
+timewait 3
+sub_bupdel 13
+timewait 3
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name チヅル 255
+
+mes
+…おお、夜明けだ。新たな朝日が、
+都を照らしだしておる。
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 8
+
+//トトバストアップ
+bup12 script/player/k1
+bup12fadechg 32
+buppos12 500 480
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name トト 255
+
+#voice 12 1
+
+mes
+よーし、それじゃあ、
+ボクたちも出発だみゃ！
+
+mes
+新たな年を迎えても、まだまだ
+ボクたちの旅は続くみゃ！
+
+fadeout 16
+namedel
+bupeff12fadeout 32
+bupeff14fadeout 32
+sub_bupdel 12
+sub_bupdel 14
+timewait 8
+
+#MFADE
+
+bupdel
+
+timewait 6
+
+//====================================================
+//
+
+//背景
+back script/black
+backpos 320 600
+
+//ナレーションの位置調整
+fontpos 70 400
+
+timewait 4
+
+mes
+———アマツノ都の呪われた神事は
+終わり、ふたたび冒険者たちは
+新たな旅に出発する。
+
+mes
+たとえ神の力に引き裂かれようとも、
+冒険者たちの縁はまた引かれ合い、
+絆として大いなる力を解き放つ。
+
+mes
+それは五〇〇年前の前世、
+新たな年を迎えた現代であっても決して
+変わらぬ、ひとつの真理であるから———
+
+fadeout 12
+
+bupdel
+
+timewait 10
+
+//====================================================
+
+//フレーム
+bup15 script/event_frame02
+buppos15 320 480
+
+//背景
+back script/bg/2
+backpos 320 480
+
+//BGM
+#bgm 3
+
+//セリフ位置調整
+namepos 45 625
+fontpos 45 685
+
+//フェード
+fadechg 16
+timewait 20
+
+//メイバストアップ
+bup13 script/player/k298_1
+bup13fadechg 32
+buppos13 600 480
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name メイ 255
+
+mes
+それじゃあ、みんな…
+
+//バストアップ絵変更
+bup13 script/player/k298_2
+
+mes
+またね！
+
+fadeout 16
+namedel
+bupeff13fadeout 32
+bupeff14fadeout 32
+sub_bupdel 14
+timewait 8
+
+bupdel
+
+#MFADE
+
+timewait 10
+
+:end
+
+end

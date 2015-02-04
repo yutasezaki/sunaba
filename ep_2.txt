@@ -1,0 +1,918 @@
+:start
+//=========================================
+//：1月ランキングイベント エピローグ_2
+//===================================
+//
+
+//進行アイコン
+wicon script/tal_sto_next
+wiconpos 600 900
+
+//フレーム
+bup15 script/event_frame02
+buppos15 320 480
+
+//背景
+back script/bg/tal_sto_bg0_191
+backpos 320 480
+
+//BGM
+#bgm 5
+
+//セリフ位置調整
+namepos 45 625
+fontpos 45 685
+
+//リリーちびキャラ
+bup2 script/player/661
+buppos2 80 350
+bupLR2 0
+
+//ジントちびキャラ
+bup3 script/player/663
+buppos3 800 320
+bupLR3 1
+
+//パレッティちびキャラ
+bup4 script/player/664
+buppos4 190 400
+bupLR4 0
+
+//アーピルちびキャラ
+bup5 script/player/660
+buppos5 380 400
+bupLR5 1
+
+//メイちびキャラ
+bup6 script/player/659
+buppos6 85 470
+bupLR6 0
+
+//ヒナちびキャラ
+bup7 script/player/658
+buppos7 290 470
+bupLR7 1
+
+//フェイド
+fadechg 16
+timewait 10
+
+//ジント登場
+scroll 300 320 12 3
+timewait 10
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name ジント 255
+
+mes
+どうだ！見つかったか！？
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name パレッティ 255
+
+mes
+ダメ…どこにもいない…
+
+mes
+もしかしてトトだけもとに
+戻らなかったんじゃ…
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name ヒナ 255
+
+mes
+トト…
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メイアクション
+action 1 6
+timewait 8
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name メイ 255
+
+mes
+みんな諦めちゃだめだよ！
+
+mes
+大丈夫！きっとトトさんも
+ひょっこり姿を見せるはずだって！
+
+mes	
+私、あっちを探してくるね！
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//セリフ位置調整
+fontpos -500 −500
+
+//メイふり向く
+bupLR6 1
+timewait 5
+
+//メイはける
+scroll -200 470 12 6
+
+timewait 10
+
+//セリフ位置調整
+namepos 45 625
+fontpos 45 685
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name リリー 255
+
+mes
+…トト、こんなことになるなら、
+もっと優しくしてやるべきだった。
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name ヒナ 255
+
+mes
+…ヒナ、トトのこと、忘れない…
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//セリフ位置調整
+fontpos -500 −500
+
+#MFADE
+
+//シンちびキャラ
+bup9 script/player/111
+buppos9 800 330
+bupLR9 1
+
+//シンバストアップ事前セット
+bup13 script/player/k111
+
+//シン登場
+scroll 540 320 12 9
+timewait 8
+
+//セリフ位置調整
+namepos 45 625
+fontpos 45 685
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name シン 255
+
+mes
+なになに？
+これはもしかしてコントの真っ最中？
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//ふり向く
+bupLR3 0
+bupLR5 0
+bupLR7 0
+
+timewait 6
+
+//ジントアクション
+action 1 3
+timewait 8
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name ジント 255
+
+mes
+シン！なにしにきた！
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//シンバストアップ
+bup13fadechg 32
+buppos13 500 480
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name シン 255
+
+mes
+やり合うつもりはないよー。
+ボクだってクタクタだしさー。
+
+mes
+ま、君たちには借りができちゃったけど、
+いつまでも借りっ放しも癪だからさ…
+
+mes
+ほい。都の近くで行き倒れてたから、
+届けてあげたよ、っと。
+
+//エフェクト消し
+bup13fadeout 32
+timewait 3
+sub_bupdel 13
+timewait 3
+
+//トトバストアップ事前セット
+bup13 script/player/k1
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 10
+
+//セリフ位置調整
+fontpos -500 −500
+
+//BGM
+#bgm 3
+
+//トトちびキャラ
+bup8 script/player/001
+buppos8 670 450
+bupLR8 1
+
+//トト登場
+scroll 610 450 5 8
+timewait 8
+scroll 550 450 5 8
+timewait 8
+scroll 490 450 5 8
+
+timewait 10
+
+//エフェクト
+#se 34
+bupeff2 script/eff/eff1
+bupeffpos2 30 -90
+action 1 17
+#se 34
+bupeff3 script/eff/eff1
+bupeffpos3 30 -90
+action 1 18
+#se 34
+bupeff4 script/eff/eff1
+bupeffpos4 30 -90
+action 1 19
+#se 34
+bupeff5 script/eff/eff1
+bupeffpos5 30 -90
+action 1 20
+#se 34
+bupeff7 script/eff/eff1
+bupeffpos7 30 -90
+action 1 22
+
+timewait 8
+
+//エフェクト消し
+sub_bupdel 17
+sub_bupdel 20
+sub_bupdel 18
+sub_bupdel 19
+sub_bupdel 22
+
+timewait 3
+
+//セリフ位置調整
+namepos 45 625
+fontpos 45 685
+
+//メッセージ枠
+bupeff14fadechg 32
+buppos14 0 0
+bupeffpos14 320 715
+bupeff14 script/tal_sto_base
+
+timewait 3
+
+//メッセージ枠揺らす
+action 1 29
+
+name リターナー一同 255
+
+mes
+トトッ！！？？
+
+//メッセージ枠消し
+namedel
+bupeff14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 7
+sub_bupdel 29
+
+//トトバストアップ
+bup13fadechg 32
+buppos13 500 480
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name トト 255
+
+mes
+みんなぁ…探したみゃぁ…
+もう、いままで大変だったんだみゃぁ…
+
+//メッセージ枠消し
+fadeout 16
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+bupdel
+
+#MFADE
+
+timewait 18
+
+//====================================================
+//トト回想
+
+//フレーム
+bup15 script/event_frame02
+buppos15 320 480
+
+//背景
+back script/bg/3
+backpos 320 480
+
+//BGM
+#bgm 6
+
+//セリフ位置調整
+namepos 45 625
+fontpos 45 685
+
+//トトちびキャラ
+bup2 script/player/001
+buppos2 325 400
+bupLR2 0
+
+//フェイド
+fadechg 16
+timewait 10
+
+//エフェクト
+bupeff2 script/eff/eff2
+bupeffpos2 30 -40
+action 1 17
+
+timewait 6
+
+//エフェクト消し
+sub_bupdel 17
+
+timewait 8
+
+//トトキョロキョロ
+bupLR2 1
+timewait 2
+bupLR2 0
+timewait 2
+bupLR2 1
+timewait 2
+bupLR2 0
+
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name トト 255
+
+mes
+———目が覚めたらみんなの姿がなくて、
+ひとりでずーっと探してたんだみゃ…
+
+//メッセージ枠消し
+fadeout 16
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+bupdel
+
+timewait 6
+
+//フレーム
+bup15 script/event_frame02
+buppos15 320 480
+
+//背景
+back script/bg/9
+backpos 320 480
+
+//フェイド
+fadechg 16
+timewait 10
+
+//トトちびキャラ
+bup2 script/player/001
+buppos2 -100 420
+bupLR2 0
+
+//トト登場
+scroll 320 420 10 2
+
+timewait 8
+
+//エフェクト
+bupeff2 script/eff/eff4
+bupeffpos2 30 -40
+action 1 17
+
+timewait 8
+
+//エフェクト消し
+sub_bupdel 17
+
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name トト 255
+
+mes
+もう、あちこちをさまよい歩いて…
+
+//メッセージ枠消し
+fadeout 16
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+bupdel
+
+timewait 6
+
+//フレーム
+bup15 script/event_frame02
+buppos15 320 480
+
+//背景
+back script/bg/tal_sto_bg0_013
+backpos 320 480
+
+//トトちびキャラ
+bup2 script/player/001
+buppos2 180 400
+bupLR2 0
+
+//魔族A
+bup3 script/player/1000_1
+buppos3 350 370
+bupLR3 0
+
+//魔族B
+bup4 script/player/1012_1
+buppos4 480 420
+bupLR4 0
+
+//魔物C
+bup5 script/player/1000_1
+buppos5 330 470
+bupLR5 0
+
+//魔物D
+bup6 script/player/1000_1
+buppos6 530 490
+bupLR6 0
+
+//フェイド
+fadechg 16
+timewait 10
+
+//アクション
+action 1 4
+timewait 6
+action 1 3
+action 1 5
+action 1 6
+
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name トト 255
+
+mes
+あるときは魔族の軍団を相手取り…
+
+//メッセージ枠消し
+fadeout 16
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+bupdel
+
+timewait 6
+
+//フレーム
+bup15 script/event_frame02
+buppos15 320 480
+
+//背景
+back script/bg/tal_sto_bg0_121
+backpos 320 480
+
+//トトちびキャラ
+bup2 script/player/001
+buppos2 250 480
+bupLR2 0
+
+//人魚
+bup3 script/player/511
+buppos3 400 490
+bupLR3 1
+
+//フェイド
+fadechg 16
+timewait 10
+
+//エフェクト
+bupeff2 script/eff/eff3
+bupeffpos2 30 -40
+action 1 17
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name トト 255
+
+mes
+あるときは海底の秘宝を巡る大冒険…
+
+mes
+それでもボクはみんなを探して、
+この身ひとつで頑張ってー頑張ってー…
+
+//メッセージ枠消し
+fadeout 16
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+bupdel
+
+#MFADE
+
+timewait 18
+
+//====================================================
+//回想終了
+
+//フレーム
+bup15 script/event_frame02
+buppos15 320 480
+
+//背景
+back script/bg/tal_sto_bg0_191
+backpos 320 480
+
+//BGM
+#bgm 3
+
+//セリフ位置調整
+namepos 45 625
+fontpos 45 685
+
+//リリーちびキャラ
+bup2 script/player/661
+buppos2 80 350
+bupLR2 1
+
+//ジントちびキャラ
+bup3 script/player/663
+buppos3 270 310
+bupLR3 1
+
+//パレッティちびキャラ
+bup4 script/player/664
+buppos4 190 400
+bupLR4 1
+
+//ヒナちびキャラ
+bup7 script/player/658
+buppos7 400 400
+bupLR7 0
+
+//トトちびキャラ
+bup8 script/player/001
+buppos8 520 400
+bupLR8 1
+
+//フェイド
+fadechg 16
+timewait 10
+
+//パレッティアクション
+action 1 4
+timewait 8
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name パレッティ 255
+
+mes
+よし、あとはメイが揃えば
+全員集合ね。
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name ジント 255
+
+mes
+そうだな。アーピルが呼びに行ってるし、
+そろそろ戻るだろう…
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//トトエフェクト
+#se 34
+bupeff8 script/eff/eff2
+bupeffpos8 30 -40
+action 1 23
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name トト 255
+
+mes
+あれ？みんな？誰の話してるみゃ。
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//エフェクト消し
+sub_bupdel 23
+
+timewait 3
+
+//トトアクション
+action 1 8
+timewait 8
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name トト 255
+
+mes
+もしもーし、まだボクの話は
+終わってないみゃー！
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name ヒナ 255
+
+mes
+大丈夫、いま紹介する。
+ヒナたちの恩人…
+きっとトトとも仲良くなれる。
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 10
+
+//セリフ位置調整
+fontpos -500 −500
+
+//アーピルちびキャラ
+bup9 script/player/660
+buppos9 -200 470
+bupLR9 0
+
+//アーピル登場
+scroll 85 470 8 9
+
+timewait 16
+
+//ヒナふり向く
+bupLR2 0
+bupLR7 1
+timewait 8
+
+//リリーアクション
+action 1 2
+timewait 8
+
+//セリフ位置調整
+namepos 45 625
+fontpos 45 685
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name リリー 255
+
+mes
+アーピル！お帰りだな！
+これでようやく勢揃い———
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name アーピル 255
+
+mes
+それがのう…
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//エフェクト
+#se 34
+bupeff2 script/eff/eff1
+bupeffpos2 30 -90
+action 1 17
+#se 34
+bupeff3 script/eff/eff1
+bupeffpos3 30 -90
+action 1 18
+#se 34
+bupeff4 script/eff/eff1
+bupeffpos4 30 -90
+action 1 19
+#se 34
+bupeff7 script/eff/eff1
+bupeffpos7 30 -90
+action 1 22
+#se 34
+bupeff8 script/eff/eff1
+bupeffpos8 30 -40
+action 1 23
+
+timewait 10
+
+fadeout 16
+
+bupdel
+
+#MFADE
+
+timewait 10
+
+:end
+
+end
+

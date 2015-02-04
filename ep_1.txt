@@ -1,0 +1,408 @@
+:start
+//=========================================
+//：1月ランキングイベント エピローグ_1
+//===================================
+
+//進行アイコン
+wicon script/tal_sto_next
+wiconpos 600 900
+
+//背景
+back script/black
+backpos 320 600
+
+//ナレーションの位置調整
+fontpos 60 400
+
+timewait 3
+
+//ナレーション
+fontc 0
+mes
+———アマツノ都で行なわれる、
+『奉名の儀』に巻き込まれた冒険者たち。
+
+mes
+冒険者たちは神徒に変えられていた
+仲間を取り戻し、すべての札を
+集めることに成功する。
+
+mes
+いま冒険者はメイや仲間と共に、
+ウロ神様に札を捧げるべく、
+夜明け前の神社へ足を踏み入れた———
+
+fadeout 32
+timewait 5
+
+//====================================================
+//アマツノ都・夜明け前
+
+//フレーム
+bup15 script/event_frame02
+buppos15 320 480
+
+//背景
+back script/bg/tal_sto_bg0_193
+backpos 320 480
+
+//BGM
+#bgm 4
+
+//セリフ位置調整
+namepos 45 625
+fontpos 45 685
+
+//ウロ神ちびキャラ
+bup2 script/player/2346423236
+buppos2 510 380
+bupLR2 0
+
+//チヅルちびキャラ
+bup3 script/player/534
+buppos3 400 470
+bupLR3 1
+
+//ヒナちびキャラ
+bup4 script/player/658
+buppos4 270 320
+bupLR4 0
+
+//リリーちびキャラ
+bup5 script/player/661
+buppos5 170 400
+bupLR5 0
+
+//ジントちびキャラ
+bup6 script/player/663
+buppos6 85 470
+bupLR6 0
+
+//メイちびキャラ
+bup7 script/player/659
+buppos7 270 470
+bupLR7 0
+
+//フェイド
+fadechg 16
+timewait 10
+
+//札の束(仮)事前セット
+bup13 script/player/k659
+
+//メイアクション
+action 1 7
+timewait 8
+
+//札の束(仮)
+bup13fadechg 32
+buppos13 500 480
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name メイ 255
+
+mes
+さぁ、ウロ神様。
+全部のお札を揃えたよ！
+
+mes
+私たちの願いを叶えて、
+都の人やみんなの仲間をもとに戻して！
+
+//エフェクト消し
+bup13fadeout 32
+sub_bupdel 13
+
+//チヅルバストアップ事前セット
+bup13 script/player/k534
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 10
+
+//SE38
+#se 28
+
+//フラッシュ
+flush 255 255 255 8
+
+timewait 8
+
+//ウロ神(仮)キャラ変更
+bup2 script/player/2346423236
+buppos2 510 380
+bupLR2 0
+
+timewait 8
+
+//チヅルエフェクト
+#se 34
+bupeff3 script/eff/eff1
+bupeffpos3 30 -90
+action 1 18
+timewait 8
+
+//チヅルふり向く
+bupLR3 0
+timewait 5
+
+//チヅルエフェクト消し
+sub_bupdel 18
+timewait 2
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name チヅル 255
+
+mes
+ウロ神様…！
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+#MFADE
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name ウロ神 255
+
+mes
+すべての札を集めし者…
+我、そなたを強者と認めたり…
+久しく見ぬ強者と認めたり…
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//SE38
+#se 28
+
+//フラッシュ
+flush 255 255 255 8
+
+timewait 8
+
+//ウロ神(仮)キャラ変更
+bup2 script/player/2346423236
+buppos2 510 380
+bupLR2 0
+
+timewait 8
+
+//チヅルアクション
+action 1 3
+timewait 8
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name チヅル 255
+
+mes
+ウロ神様のケガレが祓われていく…！
+
+mes
+…そうでしたか、
+そうであられましたか！
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//チヅルふり向く
+bupLR3 1
+timewait 5
+
+//BGM
+#bgm 3
+
+//チヅルバストアップ
+bup13fadechg 32
+buppos13 500 480
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name チヅル 255
+
+mes
+ウロ神様が求めたのは真の強者…
+己の欲に惑わされず、他者のために
+身を捧げられる誠実なる魂…
+
+mes	
+冒険者よ、ウロ神様は特に
+お主に目をつけておられたようだ…
+
+mes
+『仲間』という力をお主から奪い、
+試されたようだが、見事に
+お主は己の力を取り戻したのだな…
+
+//エフェクト消し
+bup13fadeout 32
+timewait 3
+sub_bupdel 13
+timewait 3
+
+//宙を舞う札の束(仮)事前セット
+bup13 script/player/k659
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メイアクション
+action 1 7
+timewait 8
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name メイ 255
+
+mes
+じゃあ、みんなが神徒にされていたのも
+そのために！？
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//宙を舞う札の束(仮)
+bup13fadechg 32
+buppos13 500 480
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name チヅル 255
+
+mes
+名が還って行く…神徒にされ、札と
+なっていた者たちが戻って行く…
+
+mes
+これで都の民も、父も、母も戻ってくる！
+
+//エフェクト消し
+bup13fadeout 32
+sub_bupdel 13
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 8
+
+//リリーアクション
+action 1 5
+timewait 8
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name リリー 255
+
+mes
+ということは、もしかしてトトも！？
+
+//メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 6
+
+//メイふり向く
+bupLR7 1
+timewait 5
+
+//メイアクション
+action 1 7
+timewait 8
+
+//メッセージ枠
+bup14fadechg 32
+buppos14 320 715
+bup14 script/tal_sto_base
+
+name メイ 255
+
+mes
+行ってみよう！
+
+メッセージ枠消し
+namedel
+bup14fadeout 32
+timewait 3
+sub_bupdel 14
+timewait 8
+
+//はける
+bupLR4 1
+bupLR5 1
+bupLR6 1
+
+timewait 6
+
+scroll -500 470 12 6
+scroll -300 400 12 5
+scroll -200 320 12 4
+scroll -300 470 12 7
+
+timewait 8
+
+fadeout 16
+
+bupdel
+
+#MFADE
+
+timewait 10
+
+:end
+
+end
+
